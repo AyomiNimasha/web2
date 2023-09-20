@@ -6,16 +6,17 @@ import {
   Routes,
 } from "react-router-dom";
 
+import { Layout } from "@/components/layout/Layout";
 import { Home } from "@/pages/Home";
 import { Login } from "@/pages/Login";
 import { useAuth } from "@/state/auth";
 
-function AuthedRoute() {
+function NonAuthedRoute() {
   const { isAuth } = useAuth();
-  return isAuth ? <Outlet /> : <Navigate to="/login" />;
+  return isAuth ? <Outlet /> : <Navigate to="/" />;
 }
 
-function NonAuthedRoute() {
+function AuthedRoute() {
   const { isAuth } = useAuth();
   return !isAuth ? <Outlet /> : <Navigate to="/" />;
 }
@@ -24,11 +25,10 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<NonAuthedRoute />}>
-          <Route path="/login" element={<Login />} />
-        </Route>
         <Route element={<AuthedRoute />}>
-          <Route path="/" element={<Home />} />
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>

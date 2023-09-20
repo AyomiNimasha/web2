@@ -1,4 +1,4 @@
-import "./main.css";
+import "../src/styles/Tailwind.css";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StrictMode } from "react";
