@@ -15,7 +15,7 @@ const NavBar = () => {
           <div key={navlinks.id}>{navlinks.title}</div>
         ))}
       </div>
-      <div className="flex flex-row basis-1/4 justify-end text-2xl  gap-4">
+      <div className="flex flex-row basis-1/4 justify-end text-2xl gap-4">
         {IconLink?.map(iconlinks => (
           <div key={iconlinks.id}>{iconlinks.icon}</div>
         ))}
