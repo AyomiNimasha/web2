@@ -1,8 +1,10 @@
 import React from "react";
 
+import { SizeCard } from "./SizeCard";
+
 interface Props {
   image: string;
-  //image2: string;
+  image2?: string;
   title: string;
   productName: string;
   price: number;
@@ -19,18 +21,22 @@ export const ProductCard = ({
   isNew,
 }: Props) => {
   return (
-    <div className="flex flex-col border-black py-3 container mx-auto  font-serif text-sm">
-      <div className="flex w-[400px] h-[500px] bg-green">
+    <div className="flex flex-col p-4 gap-2 justify-center w-full sm:max-w-[450px] sm:min-w-[450px] sm:w-[450px] border border-black">
+      <div className="flex w-full h-[500px] ">
         <img src={image} alt="" />
       </div>
-      <h2 className="text-slate-600">{title}</h2>
+      <div className="text-slate-600">{title}</div>
       <div className="font-bold ">
-        <h2>{productName}</h2>
-        <h2>{price}</h2>
-        <h2 className="">{sizes}</h2>
+        <div>{productName} </div>
+        <div>LKR {price}</div>
+        <div className="flex flex-wrap gap-2 mt-2">
+          {sizes.map((sizes, index) => (
+            <SizeCard key={index} size={sizes} />
+          ))}
+        </div>
       </div>
 
-      <h2>{isNew}</h2>
+      <div>{isNew}</div>
     </div>
   );
 };

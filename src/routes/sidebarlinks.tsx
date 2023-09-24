@@ -11,56 +11,56 @@ import {
 
 export const SideBarLinks = [
   {
-    id: "a",
+    id: 30,
     title: "New-In",
     icon: <BiAddToQueue />,
     path: "#",
   },
 
   {
-    id: "b",
+    id: 31,
     title: "Deals",
     icon: <BiStore />,
     path: "#",
   },
 
   {
-    id: "c",
+    id: 32,
     title: "Gift Box",
     icon: <BiGift />,
     path: "#",
   },
 
   {
-    id: "d",
+    id: 33,
     title: "Gift Vouchers",
     icon: <BiBookmark />,
     path: "#",
   },
 
   {
-    id: "e",
+    id: 34,
     title: "Wishlist",
     icon: <BiHeart />,
     path: "#",
   },
 
   {
-    id: "f",
+    id: 35,
     title: "Track Order",
     icon: <BiCartAlt />,
     path: "#",
   },
 
   {
-    id: "g",
+    id: 36,
     title: "Return Policy",
     icon: <BiArrowBack />,
     path: "#",
   },
 
   {
-    id: "h",
+    id: 37,
     title: "About Chenara DODGE",
     icon: <BiCalendarExclamation />,
     path: "#",

@@ -8,31 +8,31 @@ import {
 
 export const IconLink = [
   {
-    id: "A",
+    id: 20,
     icon: <BiCartAdd />,
     path: "#",
   },
 
   {
-    id: "A",
+    id: 21,
     icon: <BiSearch />,
     path: "#",
   },
 
   {
-    id: "A",
+    id: 22,
     icon: <BiHeart />,
     path: "#",
   },
 
   {
-    id: "A",
+    id: 23,
     icon: <BiLogIn />,
     path: "#",
   },
 
   {
-    id: "A",
+    id: 24,
     icon: <BiCartAlt />,
     path: "#",
   },

@@ -4,10 +4,10 @@ interface Props {
   variant: "filled" | "outline"; //optional ?
   btnText: string;
 }
-export const Button = ({ variant, btnText }: Props) => {
+const Button = ({ variant, btnText }: Props) => {
   return (
     <div>
-      <button className={`rounded-xl `}>
+      <button className=" border bg-pink-200 bg-opacity-40 hover:bg-orange-300 p-2 w-full">
         {variant === "filled"}
         {variant === "outline"}
         {btnText}
@@ -15,3 +15,4 @@ export const Button = ({ variant, btnText }: Props) => {
     </div>
   );
 };
+export default Button;

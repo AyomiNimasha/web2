@@ -13,12 +13,12 @@ export const Layout = () => {
       <NavBar />
       <div className="flex h-screen overflow-hidden">
         {/* Sidebar */}
-        <SideBar />
+        {/* <SideBar /> */}
         {/* Content area */}
         <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
           {/*  Site header */}
 
-          <main className="p-4">
+          <main className="">
             <Outlet />
           </main>
           {/* <Footer /> */}
