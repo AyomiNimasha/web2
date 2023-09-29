@@ -21,15 +21,15 @@ export const ProductCard = ({
   isNew,
 }: Props) => {
   return (
-    <div className="flex flex-col p-4 gap-2 justify-center w-full sm:max-w-[450px] sm:min-w-[450px] sm:w-[450px] border border-black">
-      <div className="flex w-full h-[500px] ">
-        <img src={image} alt="" />
+    <div className="flex flex-col p-4 gap-2  justify-center w-full ">
+      <div className="flex w-full  ">
+        <img src={image} alt="" className="border border-black block " />
       </div>
       <div className="text-slate-600">{title}</div>
       <div className="font-bold ">
         <div>{productName} </div>
         <div>LKR {price}</div>
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-2 mt-2 font-normal text-xs">
           {sizes.map((sizes, index) => (
             <SizeCard key={index} size={sizes} />
           ))}

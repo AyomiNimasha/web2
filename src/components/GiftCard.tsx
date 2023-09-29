@@ -12,14 +12,14 @@ export const GiftCard = ({
   giftdescription,
 }: Props) => {
   return (
-    <div className="flex flex-col text-center shadow-xl items-center sm:max-w-[250px] md:max-w-[250px] lg:max-w-[250px] font-serif font-bold ">
-      <div className="relative flex flex-col items-center bg-yellow-200 bg-opacity-50 text-xl font-bold ">
+    <div className="flex flex-col text-center shadow-xl items-center  font-serif font-bold  ">
+      <div className="relative flex flex-col items-center text-xl font-bold w-64 h-32  bg-yellow-200 bg-opacity-100">
         <span className="absolute -top-6">{giftNumber}</span>
-        <img src={giftimage} alt="" />
+        <img src={giftimage} alt="" className="w-ful h-full" />
       </div>
-      <div className="bg-opacity-50">
-        <div className="text-xl bg-blue-200">{giftTitle}</div>
-        <div className="text-sm bg-blue-200">{giftdescription}</div>
+      <div className="bg-opacity-50 bg-blue-200 w-64 h-32">
+        <div className="text-xl">{giftTitle}</div>
+        <div className="text-sm">{giftdescription}</div>
       </div>
     </div>
   );

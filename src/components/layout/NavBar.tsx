@@ -8,7 +8,7 @@ import { NavLinks } from "@/routes/navlinks";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-row font-serif shadow-xl items-center h-20 ml-1 mr-1">
+    <div className="flex flex-row font-serif shadow-xl shadow-co items-center h-20 ml-1 mr-1">
       <div className=" text-2xl mr-3 ">
         <BiMenu className="sm:block md:block lg:hidden" />
       </div>
@@ -17,11 +17,11 @@ const NavBar = () => {
         {NavLinks?.map(navlink => {
           if (navlink.sublinks?.length !== undefined) {
             return (
-              <div key={navlink.id} className="relative group">
+              <div key={navlink.id} className="relative group h-full">
                 <Link to={navlink.path} className="group">
                   {navlink.title}
                 </Link>
-                <div className="absolute hidden group-hover:block w-[300px] h-[350px]  space-y-3 shadow-xl bg-slate-100 mt-7">
+                <div className="absolute z-10 shadow-xl hidden group-hover:block w-[300px]  bg-slate-50 space-y-3  p-8 items-center">
                   {navlink.sublinks.map(sublink => (
                     <div key={sublink.id} className="">
                       <Link to={sublink.path} className="">

@@ -7,14 +7,14 @@ interface Props {
 export const SizeCard = ({ size }: Props) => {
   const sizes = [
     { id: 1, size: "UK8" },
-    { id: 1, size: "UK10" },
-    { id: 1, size: "UK12" },
-    { id: 1, size: "UK14" },
-    { id: 1, size: "UK16" },
+    { id: 2, size: "UK10" },
+    { id: 3, size: "UK12" },
+    { id: 4, size: "UK14" },
+    { id: 5, size: "UK16" },
   ];
   return (
-    <div>
-      <span className="text-red-500 border border-black rounded-md p-1">{size}</span>
-    </div>
+    <span className="text-black border border-slate-300 box-border p-1">
+      {size}
+    </span>
   );
 };

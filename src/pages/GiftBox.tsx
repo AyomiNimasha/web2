@@ -1,7 +1,11 @@
 import Button from "@/components/Button";
 import { GiftCard } from "@/components/GiftCard";
 
-import gift from "../assets/gift.png";
+import book from "../assets/giftcard/book.png";
+import box from "../assets/giftcard/box.png";
+import frock from "../assets/giftcard/frock.png";
+import gift from "../assets/giftcard/gift.png";
+import greeting from "../assets/giftcard/greeting.png";
 
 export function GiftBox() {
   const giftList = [
@@ -14,31 +18,31 @@ export function GiftBox() {
     },
     {
       id: 2,
-      giftNumber: "01.",
-      giftimage: gift,
-      giftTitle: "Select the Box",
-      giftdescription: "Our standard white box is made to look pure & neat.",
+      giftNumber: "02.",
+      giftimage: frock,
+      giftTitle: "Add your design's",
+      giftdescription: "Select your favorite outfits & add to the gift box.",
     },
     {
       id: 3,
-      giftNumber: "01.",
-      giftimage: gift,
-      giftTitle: "Select the Box",
-      giftdescription: "Our standard white box is made to look pure & neat.",
+      giftNumber: "03.",
+      giftimage: book,
+      giftTitle: "Cute Additions",
+      giftdescription: "Go that extra mile to put a smile on their face.",
     },
     {
       id: 4,
-      giftNumber: "01.",
-      giftimage: gift,
-      giftTitle: "Select the Box",
-      giftdescription: "Our standard white box is made to look pure & neat.",
+      giftNumber: "04.",
+      giftimage: greeting,
+      giftTitle: "Greeting Card",
+      giftdescription: "Let them know you feel,type in what needs to be said.",
     },
     {
       id: 5,
-      giftNumber: "01.",
-      giftimage: gift,
-      giftTitle: "Select the Box",
-      giftdescription: "Our standard white box is made to look pure & neat.",
+      giftNumber: "05.",
+      giftimage: box,
+      giftTitle: "Send It off",
+      giftdescription: "Lets see the face of happiness",
     },
   ];
   return (
@@ -61,7 +65,7 @@ export function GiftBox() {
       </div>
 
       {/* add giftcrds */}
-      <div className="flex gap-8 mt-10">
+      <div className="flex gap-14 mt-10">
         {giftList.map(g => (
           <GiftCard
             key={g.id}

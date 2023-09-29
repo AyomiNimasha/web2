@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
+import { BottomButton } from "../BottomButton";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import NavBar from "./NavBar";
@@ -11,17 +12,21 @@ export const Layout = () => {
     <div>
       <Header />
       <NavBar />
-      <div className="flex h-screen overflow-hidden">
+      <div className="flex h-screen overflow-hidden pl-40 pt-10 pr-40">
         {/* Sidebar */}
         {/* <SideBar /> */}
         {/* Content area */}
+
         <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
           {/*  Site header */}
 
           <main className="">
             <Outlet />
           </main>
-          {/* <Footer /> */}
+
+          <BottomButton />
+
+          <Footer />
         </div>
       </div>
     </div>

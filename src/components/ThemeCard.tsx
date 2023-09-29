@@ -62,7 +62,7 @@ Props) => {
             {themedescription}
           </div>
         </div>
-        <div className="flex flex-col basis-1/2 underline-offset-8">
+        <div className="flex flex-col basis-1/2 underline-offset-8  sm:hidden lg:block">
           <div className="flex items-center text-l underline-offset-8 font-bold">
             Explore exciting categories
           </div>
@@ -78,7 +78,20 @@ Props) => {
           </div>
         </div>
       </div>
-      <div className="flex gap-2">
+      <div className="flex flex-col  lg:hidden">
+        <div className="flex gap-2">
+          <div className="flex  gap-3 ">
+            {categoryList.map(c => (
+              <CategoryCard
+                key={c.id}
+                categoryimage={c.categoryimage}
+                categorytitle={c.categorytitle}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="flex mt-12">
         <div className="w-[100px] h-full">
           <Button variant={"filled"} btnText={"Filter"} />
         </div>
@@ -86,6 +99,7 @@ Props) => {
           <Button variant={"filled"} btnText={"Order by-Newest"} />
         </div>
       </div>
+      <div className="m-10">Found .. outfits</div>
     </>
   );
 };
