@@ -59,7 +59,7 @@ export function GiftBox() {
           Share the love & make someone with happy with our amaizing array of
           gifts.Click below to get started.
         </div>
-        <div className="w-[250px] mt-16">
+        <div className="w-[250px] mt-12 mb-8">
           <Button variant={"filled"} btnText={"Let's get started"} />
         </div>
       </div>

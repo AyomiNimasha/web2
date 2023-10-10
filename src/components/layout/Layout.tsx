@@ -2,23 +2,25 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import { BottomButton } from "../BottomButton";
+import Filter from "./Filter";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import NavBar from "./NavBar";
-import { SideBar } from "./SideBar";
+import SideBar from "./SideBar";
 
 export const Layout = () => {
   return (
-    <div>
+    <div className="">
       <Header />
       <NavBar />
-      <div className="flex h-screen overflow-hidden pl-40 pt-10 pr-40">
+      <div className="flex overflow-hidden lg:ml-40 lg:mt-10 lg:mr-40 md:ml-0 md:mt-5 md:mr-10">
         {/* Sidebar */}
-        {/* <SideBar /> */}
+        <SideBar />
         {/* Content area */}
 
-        <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
+        <div className="relative flex flex-col flex-1 overflow-y-hidden overflow-x-hidden">
           {/*  Site header */}
+          {/* <Filter /> */}
 
           <main className="">
             <Outlet />

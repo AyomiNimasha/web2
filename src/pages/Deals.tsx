@@ -1,4 +1,7 @@
+import { ProductCard } from "@/components/ProductCard";
 import { ThemeCard } from "@/components/ThemeCard";
+
+import image1 from "../assets/image1.jpg";
 
 export function Deals() {
   return (
@@ -10,6 +13,16 @@ export function Deals() {
           themedescription={
             "Get your hands on some beautiful products,while saving BIG."
           }
+        />
+      </div>
+      <div className="grid grid-cols-4 grid-rows-auto gap-4  mt-16">
+        <ProductCard
+          image={image1}
+          title={"Shop Now | Midi Dresses"}
+          productName={"Leah Embroidered Midi Dres"}
+          price={5350}
+          sizes={["UK8", "UK10", "UK12", "UK14", "UK16"]}
+          isNew={false}
         />
       </div>
     </div>

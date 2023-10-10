@@ -1,4 +1,3 @@
-import { title } from "process";
 import { BiMenu } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
@@ -8,10 +7,10 @@ import { NavLinks } from "@/routes/navlinks";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-row font-serif shadow-xl shadow-co items-center h-20 ml-1 mr-1">
-      <div className=" text-2xl mr-3 ">
+    <div className="flex flex-row font-serif shadow-xl shadow-co items-center h-20 ml-1 mr-1 md:ml-10">
+      {/* <div className=" text-2xl mr-3 ">
         <BiMenu className="sm:block md:block lg:hidden" />
-      </div>
+      </div> */}
       <div className="basis-1/4 font-bold text-xl"> CHENARA DODGE</div>
       <div className="relative flex flex-row text-sm font-bold gap-5 justify-center ">
         {NavLinks?.map(navlink => {
