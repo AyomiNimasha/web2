@@ -31,6 +31,7 @@ export function NewIn() {
           />
         ))}
       </div>
+      {/* sidebar content  */}
     </div>
   );
 }

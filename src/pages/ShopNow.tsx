@@ -1,6 +1,8 @@
 // import { ProductCard } from "@/components/ProductCard";
 // import { ThemeCard } from "@/components/ThemeCard";
 
+import React from "react";
+
 import { NewIn } from "./NewIn";
 
 // import image1 from "../assets/image1.jpg";

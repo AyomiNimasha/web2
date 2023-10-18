@@ -2,7 +2,6 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import { BottomButton } from "../BottomButton";
-import Filter from "./Filter";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import NavBar from "./NavBar";
@@ -15,7 +14,7 @@ export const Layout = () => {
       <NavBar />
       <div className="flex overflow-hidden lg:ml-40 lg:mt-10 lg:mr-40 md:ml-0 md:mt-5 md:mr-10">
         {/* Sidebar */}
-        <SideBar />
+
         {/* Content area */}
 
         <div className="relative flex flex-col flex-1 overflow-y-hidden overflow-x-hidden">
@@ -24,6 +23,7 @@ export const Layout = () => {
 
           <main className="">
             <Outlet />
+            <SideBar />
           </main>
 
           <BottomButton />

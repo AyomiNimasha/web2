@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BrowserRouter,
   Navigate,
@@ -6,20 +7,18 @@ import {
   Routes,
 } from "react-router-dom";
 
-import { Layout } from "@/components/layout/Layout";
 import { Deals } from "@/pages/Deals";
 import { EmbroideryCollection } from "@/pages/EmbroideryCollection";
 import { Essentials } from "@/pages/Essentials";
 import { GiftBox } from "@/pages/GiftBox";
 import { GiftVoucher } from "@/pages/GiftVoucher";
-import { Home } from "@/pages/Home";
 import { KidsCollection } from "@/pages/KidsCollection";
-import { Login } from "@/pages/Login";
 import { NewIn } from "@/pages/NewIn";
 import { ShopNow } from "@/pages/ShopNow";
 import { CoOrds } from "@/pages/subpages-essentials/CoOrds";
 import { KinitDresses } from "@/pages/subpages-essentials/KinitDresses";
 import { Shorts } from "@/pages/subpages-essentials/Shorts";
+import { Tops } from "@/pages/subpages-essentials/Tops";
 import { Tshirst } from "@/pages/subpages-essentials/Tshirst";
 import { Cardigans } from "@/pages/subpages-shopnow/Cardigans";
 import { Jumpsuits } from "@/pages/subpages-shopnow/Jumpsuits";
@@ -29,11 +28,12 @@ import { MiniDresses } from "@/pages/subpages-shopnow/MiniDresses";
 import { Pants } from "@/pages/subpages-shopnow/Pants";
 import { Rompers } from "@/pages/subpages-shopnow/Rompers";
 import { Skirts } from "@/pages/subpages-shopnow/Skirts";
-import { Tops } from "@/pages/subpages-shopnow/Tops";
 import { TwoPieceSets } from "@/pages/subpages-shopnow/TwoPieceSets";
 import { Dresses } from "@/pages/subpageskidscollection/Dresses";
 import { TravelWithWife } from "@/pages/TravelWithWife";
 import { useAuth } from "@/state/auth";
+
+import { Layout } from "../components/layout/Layout";
 
 function NonAuthedRoute() {
   const { isAuth } = useAuth();
