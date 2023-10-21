@@ -87,4 +87,9 @@ export const NavLinks = [
       { id: 9.2, title: "Two Piece Sets", path: "/travel/twopiecesets" },
     ],
   },
+  {
+    id: 10,
+    title: "Add Items",
+    path: "/additems",
+  },
 ];

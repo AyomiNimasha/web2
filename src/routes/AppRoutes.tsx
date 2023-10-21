@@ -7,6 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 
+import { DataForm } from "@/components/form/DataForm";
 import { Deals } from "@/pages/Deals";
 import { EmbroideryCollection } from "@/pages/EmbroideryCollection";
 import { Essentials } from "@/pages/Essentials";
@@ -93,6 +94,9 @@ function AppRoutes() {
             {/* route embroidery sublinks */}
             <Route path="/travel/minidresses" element={<MiniDresses />} />
             <Route path="/travel/twopiecesets" element={<TwoPieceSets />} />
+
+            {/* route data adding page */}
+            <Route path="/additems" element={<DataForm />} />
           </Route>
         </Route>
       </Routes>

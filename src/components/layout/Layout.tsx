@@ -11,7 +11,9 @@ export const Layout = () => {
   return (
     <div className="">
       <Header />
+
       <NavBar />
+
       <div className="flex overflow-hidden lg:ml-40 lg:mt-10 lg:mr-40 md:ml-0 md:mt-5 md:mr-10">
         {/* Sidebar */}
 

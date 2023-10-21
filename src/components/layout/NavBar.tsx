@@ -3,16 +3,17 @@ import { Link } from "react-router-dom";
 
 import { IconLink } from "@/routes/iconlistlink";
 import { NavLinks } from "@/routes/navlinks";
+// import { TopNavbar } from "./TopNavbar";
 // import { NavBarSublinks } from "@/routes/sublinks";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-row font-serif shadow-xl shadow-co items-center h-20 ml-1 mr-1 md:ml-10">
+    <div className="flex flex-row font-serif shadow-xl shadow-co items-center h-20 ml-2 mr-1 md:ml-10 sm:gap-24">
       {/* <div className=" text-2xl mr-3 ">
         <BiMenu className="sm:block md:block lg:hidden" />
       </div> */}
-      <div className="basis-1/4 font-bold text-xl"> CHENARA DODGE</div>
-      <div className="relative flex flex-row text-sm font-bold gap-5 justify-center ">
+      <div className="flex font-bold text-xl ml-6"> CHENARA DODGE</div>
+      <div className="relative flex flex-row text-md font-bold gap-8 justify-center ">
         {NavLinks?.map(navlink => {
           if (navlink.sublinks?.length !== undefined) {
             return (
@@ -53,10 +54,11 @@ const NavBar = () => {
         })}
       </div>
 
-      <div className="flex flex-row basis-1/4 justify-end text-2xl gap-4">
+      <div className="flex flex-row  justify-end text-2xl gap-4">
         {IconLink?.map(iconlinks => (
           <div key={iconlinks.id}>{iconlinks.icon}</div>
         ))}
+        {/* <TopNavbar /> */}
       </div>
     </div>
   );

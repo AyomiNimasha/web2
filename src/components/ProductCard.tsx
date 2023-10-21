@@ -9,6 +9,8 @@ interface Props {
   productName: string;
   price: number;
   sizes: string[];
+
+  //is new must be changed as isNewText because this name cant use in backend
   isNew: boolean;
 }
 
